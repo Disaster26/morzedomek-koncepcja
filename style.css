@@ -30,7 +30,7 @@ svg{flex:none}
 .btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--granat);outline-offset:3px}
 
 /* naglowek */
-.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:saturate(1.4) blur(8px);box-shadow:0 1px 0 var(--linia)}
+.top{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 var(--linia)}
 .top-in{height:var(--head);width:min(1320px,100% - 40px);margin-inline:auto;display:flex;align-items:center;gap:24px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--granat);flex:none}
 .logo-znak{width:62px;height:33px}
