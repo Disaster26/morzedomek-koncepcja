@@ -1,9 +1,9 @@
 (function(){
   var burger=document.querySelector('.burger'),menu=document.getElementById('menu');
-  function zamknij(){menu.classList.remove('otwarte');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Otwórz menu');document.body.style.overflow='';}
+  function zamknij(){menu.classList.remove('otwarte');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Otwórz menu');document.body.style.overflow='';document.body.classList.remove('menu-on');}
   burger.addEventListener('click',function(){
     var o=!menu.classList.contains('otwarte');
-    menu.classList.toggle('otwarte',o);burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu');document.body.style.overflow=o?'hidden':'';
+    menu.classList.toggle('otwarte',o);burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu');document.body.style.overflow=o?'hidden':'';document.body.classList.toggle('menu-on',o);
   });
   menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',zamknij);});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')zamknij();});

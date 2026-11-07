@@ -276,3 +276,4 @@ svg{flex:none}
 
 #cennik{padding-bottom:calc(clamp(64px,8vw,110px) + 58px)}
 @media (max-width:760px){#cennik{padding-bottom:calc(clamp(64px,8vw,110px) + 38px)}}
+.menu-on .mob{transform:translateY(110%)!important}
